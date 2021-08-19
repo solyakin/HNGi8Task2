@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(246, 251, 252);
+}
+header{
+    box-shadow: 1px 3px 3px rgba(230, 229, 229, 0.7);
+    padding: 20px 60px;
+    position: fixed;
+    top: 0;
+    background-color: rgb(246, 251, 252);
+    width: 100%;
+    z-index: 10;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-list{
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.header{
+    border-bottom: 2px solid cadetblue;
+}
+.container{
+    padding: 30px 60px;
+}
+.header_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.title{
+    display: flex;
+    align-items: center;
+}
+.title img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.title h3{
+    font-size: 3rem;
+    font-weight: 400;
+}
+.name span{
+    color: cadetblue;
+    font-size: 16px;
+}
+.role{
+    color: cadetblue;
+    font-weight: 500;
+}
+.description{
+    width: 70%;
+    color: black;
+    margin-top: 10px;
+    line-height: 1.7;
+}
+.right{
+    width: 50%;
+}
+.right ul{
+    list-style: none;
+}
+.right span{
+    margin-left: 10px;
+}
+.right ul li{
+    line-height: 2;
+    margin-left: 10px;
+}
+section{
+    margin: 30px auto;
+}
+.sm-title{
+    margin-bottom: 1rem;
+    color: cadetblue;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.line1, .line2{
+    margin-right: 30px;
+    position: relative;
+}
+.line1 svg{
+    fill: cadetblue;
+}
+.line1::after{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 6px;
+    width: 2px;
+    height: 280px;
+    background-color: cadetblue;
+}
+.line2::after{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 6px;
+    width: 2px;
+    height: 90px;
+    background-color: cadetblue;
+}
+.content{
+    flex: 95%;
+}
+.experiences, .education, .duration{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.work, .college{
+    width: 46%;
+    /* line-height: 2; */
+}
+.work ul, .college ul{
+    width: 90%;
+    line-height: 1.7;
+}
+.work h4, .college h4{
+    margin-bottom: 5px;
+}
+.date{
+    color: grey;
+    font-size: 14px;
+}
+.company{
+    margin: 10px auto;
+    font-style: italic;
+    color: grey;
+}
+.skills ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+    margin-top: 1rem;
+}
+.skills ul li{
+    background-color: cadetblue;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 150px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.project{
+    line-height: 2;
+}
+.duration{
+    margin-top: 10px;
+}
+.item4, .item5{
+    margin-bottom: 10px;
+}
+.certificate{
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+.certificate svg {
+    position: absolute;
+    font-size: 200px;
+    top: -300%;
+    right: -50%;
+}
+.certificate svg path{
+    fill: rgb(231, 239, 240);
+}
+@media only screen and (max-width: 1200px) {
+    .right{
+        width: 90%;
+        box-sizing: border-box;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .container{
+        padding: 20px 30px;
+    }
+    .description{
+        width: 95%;
+    }
+    .right{
+        display: none;
+    }
+    .experiences, .education{
+        display: block;
+    }
+    .work, .college{
+        width: 90%;
+        margin-bottom: 1.5rem;
+    }
+    .skills ul{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .line1::after{
+        height: 500px;
+    }
+    .line2::after{
+        height: 200px;
+    }
+}
+@media only screen and (max-width: 680px) {
+    .title h3{
+        font-size: 2rem;
+    }
+    .line1::after{
+        height: 550px;
+    }
+    .line2::after{
+        height: 200px;
+    }
+}
+@media only screen and (max-width: 540px) {
+    header{
+        padding: 20px;
+    }
+    .title{
+        display: block;
+        text-align: center;
+    }
+    .avatar{
+        margin:auto;
+        text-align: center;
+    }
+    .title img{
+        width: 130px;
+        height: 130px;
+    }
+    .title h3{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .description{
+        width: 100%;
+        text-align: justify;
+    }
+    .line1::after{
+        height: 600px;
+    }
+    .line2::after{
+        height: 240px;
+    }
+    .skills ul{
+        grid-template-columns: 1fr 1fr;
+    }   
+    .work, .college{
+        width: 100%;
+    }
+    .certificate svg{
+        display: none;
+    }
+}
